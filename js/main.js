@@ -11,7 +11,7 @@ function countUpTimer() {
   var minute = Math.floor((totalSeconds - hour * 3600) / 60);
   var seconds = totalSeconds - (hour * 3600 + minute * 60);
 
-  timer.innerHTML = "<b>" + hour + ":" + minute + ":" + seconds + "</b>";
+  //timer.innerHTML = "<b>" + hour + ":" + minute + ":" + seconds + "</b>";
 }
 
 function hola(event){
