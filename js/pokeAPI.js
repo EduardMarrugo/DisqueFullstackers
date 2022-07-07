@@ -25,7 +25,7 @@ for (let x = 0; x < array_pokemon.length; x++) {
         "</li>";
     }
     var card = `
-    <div class="col-4">
+    <div class="col-3">
         <div class="card mb-2" style="width: 100%" id="${data.name}">
             <img
                 src=""
