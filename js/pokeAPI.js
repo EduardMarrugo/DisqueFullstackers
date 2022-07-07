@@ -1,18 +1,5 @@
-$("#pokeAPI").on("click", function () {
-  $.ajax({
-    method: "GET",
-    url: "https://pokeapi.co/api/v2/pokemon/ditto",
-  }).done(function (data) {
-    $.ajax({
-      method: "GET",
-      url: data.forms[0].url,
-    }).done(function (data) {
-      console.log(data.sprites.front_default);
-    });
-  });
-});
-
 var array_pokemon = [
+  "charizard",
   "ivysaur",
   "bulbasaur",
   "lucario",
@@ -21,6 +8,8 @@ var array_pokemon = [
   "weedle",
   "beedrill",
 ];
+
+array_pokemon.sort();
 
 for (let x = 0; x < array_pokemon.length; x++) {
   $.ajax({
